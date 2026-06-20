@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mentor</title>
+
+```
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>AI Mentor</h2>
+        <p>Your Learning Companion</p>
+    </div>
+
+    <button class="new-chat" onclick="clearChat()">
+        + New Chat
+    </button>
+
+
+</aside>
+
+<main class="main">
+
+    <div class="hero-card">
+
+        <div class="hero-icon">
+            🧠
+        </div>
+
+        <h1>Learn Smarter With AI Mentor</h1>
+
+        <p>
+            Ask questions, learn AI concepts,
+            prepare for interviews and exams.
+        </p>
+
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div class="input-container">
+
+        <input
+            id="user-input"
+            placeholder="Ask anything..."
+            autocomplete="off"
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</main>
+```
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
